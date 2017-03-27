@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+    <ImageView
+        android:id="@+id/img_bank"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/logo_acb"
+        android:layout_width="70dp"
+        android:layout_height="40dp" />
+    <RelativeLayout
+        android:id="@+id/relcontain_user"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/img_bank"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textColor="#585555"
+            android:text="Nguyen Hao Nhien"
+            android:id="@+id/tvname_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#585555"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/tvname_user"
+            android:text="VCB"
+            android:id="@+id/tvname_bank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:text="999 999 999 999 999"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/tvname_user"
+            android:layout_toRightOf="@id/tvname_bank"
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/img_chose"
+        android:layout_marginRight="5dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/logo_acb"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+</RelativeLayout>

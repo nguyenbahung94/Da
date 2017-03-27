@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/fragment_toolbar"/>
+    <FrameLayout
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/fm_header"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"/>
+
+    <LinearLayout
+        android:layout_above="@+id/bottom"
+        android:id="@+id/layout_listview"
+        android:layout_below="@id/fm_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:src="@drawable/search"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+            <EditText
+                android:paddingStart="40dp"
+                android:id="@+id/edt_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/img_filter"
+                android:background="@drawable/styledt"
+                android:hint="search"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"
+              />
+
+
+            <ImageView
+                android:id="@+id/img_filter"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_filter_tool_black_shape"
+                android:layout_alignParentRight="true"
+                android:layout_height="40dp"
+                android:layout_width="40dp"/>
+        </RelativeLayout>
+        <View
+            android:background="#E2E2E2"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <ListView
+            android:id="@+id/mylistviewtransfer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"/>
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+<RelativeLayout
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="3dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <ImageView
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:src="@drawable/search"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+    <EditText
+        android:layout_centerVertical="true"
+        android:paddingStart="40dp"
+        android:id="@+id/edt_search"
+        android:paddingLeft="5dp"
+        android:background="@drawable/styledt"
+        android:layout_toLeftOf="@+id/btn_cancel"
+        android:paddingRight="10dp"
+        android:hint="search"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_alignParentRight="true"
+        android:text="cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+    <View
+        android:background="#E2E2E2"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <ListView
+        android:layout_marginTop="5dp"
+        android:id="@+id/mylistview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

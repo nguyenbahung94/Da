@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">App</string>
+    <string name="chuyentien">CHUYỂN TIỀN</string>
+    <string name="nguoinhan">Người Nhận Mới</string>
+    <string name="sotk">Số Tài khoản</string>
+    <string name="sothe">Số Thẻ</string>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/custom_toolbar" />
+
+    <RadioGroup
+        android:id="@+id/rdb_group"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/linecenter"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rdb_stk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sotk"
+                    android:textColor="#4281D0" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/linecenter"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="#4281D0" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/linecenter"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rdb_sothe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sothe"
+                    android:textColor="#4281D0" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RadioGroup>
+    <RelativeLayout
+        android:layout_above="@+id/btn_send"
+        android:id="@+id/contentmain"
+        android:layout_below="@+id/rdb_group"
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+        <include
+            android:id="@+id/incl_chosebank"
+            layout="@layout/fragment_content_reciver"/>
+        <include
+            android:visibility="gone"
+            layout="@layout/fragment_card_number"
+            android:id="@+id/incl_cardnumber"/>
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_alignParentBottom="true"
+        android:textColor="#FFFFFF"
+        android:background="#4281D0"
+        android:text="XEM LẠI VÀ GỦI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/content_hearder"
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+        <include
+            android:visibility="gone"
+            android:id="@+id/fm_content_hearder_1"
+            layout="@layout/fragment_content_header"/>
+        <include
+            android:visibility="gone"
+            android:id="@+id/fm_content_hearder_2"
+            layout="@layout/fragment_change_content_header"/>
+    </RelativeLayout>
+    <View
+        android:alpha="0.5"
+        android:background="#0a0808"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <TextView
+        android:gravity="center_horizontal"
+        android:text="Nguoi Da Nhan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
